@@ -2,7 +2,8 @@ var webpack = require("webpack");
 
 module.exports = {
   entry: {
-    level_one: "./bundles/one.js"
+    level_one: "./bundles/one.js",
+    level_two: "./bundles/two.js"
   },
 
   output: {

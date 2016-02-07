@@ -19712,6 +19712,7 @@
 
 	  render: function() {
 	    var ctx = this;
+	    console.log("render");
 	    return React.createElement("div", null, 
 	      _.map([1,2,3,4,5], function(i) {
 	        var childColor;

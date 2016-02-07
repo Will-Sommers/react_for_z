@@ -51,6 +51,7 @@ var one_page = React.createClass({
 
   render: function() {
     var ctx = this;
+    console.log("render");
     return <div>
       {_.map([1,2,3,4,5], function(i) {
         var childColor;
