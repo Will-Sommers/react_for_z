@@ -3,7 +3,8 @@ var webpack = require("webpack");
 module.exports = {
   entry: {
     level_one: "./bundles/one.js",
-    level_two: "./bundles/two.js"
+    level_two: "./bundles/two.js",
+    level_three: "./bundles/three.js"
   },
 
   output: {
