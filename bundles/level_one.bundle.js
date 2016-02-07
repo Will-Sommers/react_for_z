@@ -19693,7 +19693,7 @@
 	  }
 	})
 
-	var one_page = React.createClass({displayName: "one_page",
+	var OnePage = React.createClass({displayName: "OnePage",
 	  getInitialState: function() {
 	    return {
 	      textColor: "red"
@@ -19731,7 +19731,7 @@
 	  }
 	})
 
-	module.exports = one_page;
+	module.exports = OnePage;
 
 
 /***/ },

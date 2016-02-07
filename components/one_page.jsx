@@ -32,7 +32,7 @@ var ChildElement = React.createClass({
   }
 })
 
-var one_page = React.createClass({
+var OnePage = React.createClass({
   getInitialState: function() {
     return {
       textColor: "red"
@@ -70,4 +70,4 @@ var one_page = React.createClass({
   }
 })
 
-module.exports = one_page;
+module.exports = OnePage;
