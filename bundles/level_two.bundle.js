@@ -50,7 +50,7 @@
 
 	window.onload = function() {
 	  ReactDOM.render(
-	    React.createElement(one),
+	    React.createElement(two),
 	    document.getElementById("entry"));
 	}
 
@@ -21214,10 +21214,46 @@
 /* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
 	var React = __webpack_require__(1);
 	var _ = __webpack_require__(160);
 
+	var TwoPage = React.createClass({displayName: "TwoPage",
+
+	  getInitialState: function() {
+	    console.log("init");
+	    return {
+	      count: 1
+	    }
+	  },
+
+	  componentWillMount: function() {
+	    console.log("willMount");
+	  },
+
+	  componentDidMount: function() {
+	    console.log("DidMount");
+
+	    // Ajax generally goes here as does anything
+	    // which touches the dom or makes network requests
+	    // from the client.
+	    var ctx = this;
+	    window.setInterval(function() {
+	      var count = ctx.state.count;
+	      count++;
+	      ctx.setState({ count:  count });
+	    }, 1500)
+	  },
+	  
+	  render: function() {
+	    console.log("render");
+	    return React.createElement("div", null, 
+	      React.createElement("div", null, "Count"), 
+	      React.createElement("div", null, this.state.count)
+	    )
+	  }
+	});
+
+	module.exports = TwoPage;
 
 
 /***/ }

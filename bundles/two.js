@@ -4,6 +4,6 @@ var two = require("../components/two_page.jsx");
 
 window.onload = function() {
   ReactDOM.render(
-    React.createElement(one),
+    React.createElement(two),
     document.getElementById("entry"));
 }
